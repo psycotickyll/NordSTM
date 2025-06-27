@@ -43,6 +43,6 @@ Points suspects :
 #include "neai_inference.h"
 
 __attribute__((aligned(4))) 
-uint8_t knowledge_buffer[NEAI_KNOWLEDGE_BUFFER_SIZE];
+const float knowledge_buffer[NEAI_KNOWLEDGE_BUFFER_SIZE];
 
 ret = neai_classification_init(knowledge_buffer);
